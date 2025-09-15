@@ -1,3 +1,4 @@
+Blogger: https://austincurtis4370.blogspot.com/2025/09/module-3-analyzing-2016-data-poll-data.html
 # Define vectors
 Name <- c("Jeb", "Donald", "Ted", "Marco", "Carly", "Hillary", "Bernie")
 ABC_poll <- c(4, 62, 51, 21, 2, 14, 15)
