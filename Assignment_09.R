@@ -1,3 +1,5 @@
+Blogger: https://austincurtis4370.blogspot.com/2025/10/module-9-visualization-in-r-base.html
+
 # Setup & Data
 data("iris", package = "datasets")
 head(iris)
