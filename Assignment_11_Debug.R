@@ -1,3 +1,5 @@
+#Blogger
+https://austincurtis4370.blogspot.com/2025/11/module-11-debugging-and-defensive.html
 # Helper for Tukey rule (Q1 - 1.5*IQR, Q3 + 1.5*IQR)
 tukey.outlier <- function(v) {
   qs  <- stats::quantile(v, c(0.25, 0.75), na.rm = TRUE)
