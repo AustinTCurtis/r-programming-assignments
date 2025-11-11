@@ -1,0 +1,42 @@
+---
+title: "My R Markdown Primer"
+author: "Austin Curtis"
+date: "2025-11-11"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+##Introduction
+##Text, code, and graphics can all be included in a single file using the R Markdown document format. It facilitates repeatable analysis by allowing you to describe your work while displaying your actual code and outcomes. Once knitted, the document can be converted to Word, PDF, or HTML to create a polished, legible report.
+
+##Narrative
+##It is simple to incorporate structured text with executable R code when using R Markdown. This means that the analysis and its justification coexist in a single process rather than being copied and pasted into a different report. This enhances productivity, precision, and openness, particularly in academic research or data science.
+
+
+##Math Expression
+$\alpha + \beta = \gamma$
+
+##Load a Library/Dataset
+```{r}
+summary(cars)
+data("mtcars")
+summary(mtcars)
+
+##Generate a plot
+
+library(ggplot2)
+
+ggplot(mtcars, aes(x = wt, y = mpg)) +
+  geom_point(color = "steelblue") +
+  labs(
+    title = "Miles per Gallon vs. Weight",
+    x = "Weight (1000 lbs)",
+    y = "Miles per Gallon"
+  )
+##Reflection
+##All things considered, R Markdown offers a smooth method of combining writing, analysis, and code. In contrast to traditional reports, it guarantees that your data and findings are always current because your analysis is immediately replicated each time you re-knit the file. Once I figured out how to format chunks correctly, I discovered that combining Markdown syntax, LaTeX math, and R code was simple. It's a useful tool for producing transparent, thoroughly recorded work.
